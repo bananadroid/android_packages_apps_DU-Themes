@@ -103,6 +103,9 @@ public class Utils {
                 case "4":
                     scheduledStartThemeSummary = context.getString(R.string.theme_type_solarized_dark);
                     break;
+                case "5":
+                    scheduledStartThemeSummary = context.getString(R.string.theme_type_choco_x);
+                    break;
             }
         }
         return scheduledStartThemeSummary;
@@ -135,6 +138,9 @@ public class Utils {
                     break;
                 case "4":
                     scheduledEndThemeSummary = context.getString(R.string.theme_type_solarized_dark);
+                    break;
+                case "5":
+                    scheduledEndThemeSummary = context.getString(R.string.theme_type_choco_x);
                     break;
             }
         }
