@@ -48,13 +48,12 @@
     <string name="font_type_4" translatable="false">LG Smart Gothic</string>
     <string name="font_type_5" translatable="false">Rosemary</string>
     <string name="font_type_6" translatable="false">Sony Sketch</string>
-    <string name="font_type_7" translatable="false">Google Sans</string>
-    <string name="font_type_8" translatable="false">OnePlus Slate</string>
-    <string name="font_type_9" translatable="false">Samsung One</string>
-    <string name="font_type_10" translatable="false">Fira Sans</string>
-    <string name="font_type_11" translatable="false">Ubuntu</string>
-    <string name="font_type_12" translatable="false">Titillium Web</string>
-    <string name="font_type_13" translatable="false">Caviar Dreams</string>
+    <string name="font_type_7" translatable="false">OnePlus Slate</string>
+    <string name="font_type_8" translatable="false">Samsung One</string>
+    <string name="font_type_9" translatable="false">Fira Sans</string>
+    <string name="font_type_10" translatable="false">Ubuntu</string>
+    <string name="font_type_11" translatable="false">Titillium Web</string>
+    <string name="font_type_12" translatable="false">Caviar Dreams</string>
 
     <!-- Adaptive icon shapes -->
     <string name="adaptive_icon_shape_default">Default</string>
