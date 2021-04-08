@@ -54,8 +54,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 
-import com.android.internal.util.du.ThemesUtils;
-import com.android.internal.util.du.Utils;
+import com.android.internal.util.banana.ThemesUtils;
+import com.android.internal.util.banana.bananaUtils;
 import com.dirtyunicorns.themes.db.ThemeDatabase;
 
 import java.util.Calendar;
@@ -259,9 +259,9 @@ public class Themes extends PreferenceFragment implements ThemesListener {
 
         // Themes
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
-        if (Utils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
+        if (bananaUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
             mThemeSwitch.setValue("4");
-        } else if (Utils.isThemeEnabled("com.android.theme.pitchblack.system")) {
+        } else if (bananaUtils.isThemeEnabled("com.android.theme.pitchblack.system")) {
             mThemeSwitch.setValue("3");
         } else if (mUiModeManager != null) {
             if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_YES) {
@@ -343,7 +343,7 @@ public class Themes extends PreferenceFragment implements ThemesListener {
         int position = -1;
         for (int i = 0; i < overlays.length; i++) {
             String overlay = overlays[i];
-            if (Utils.isThemeEnabled(overlay)) {
+            if (bananaUtils.isThemeEnabled(overlay)) {
                 position = i;
             }
         }
@@ -354,7 +354,7 @@ public class Themes extends PreferenceFragment implements ThemesListener {
         String overlayName = null;
         for (int i = 0; i < overlays.length; i++) {
             String overlay = overlays[i];
-            if (Utils.isThemeEnabled(overlay)) {
+            if (bananaUtils.isThemeEnabled(overlay)) {
                 overlayName = overlay;
             }
         }
