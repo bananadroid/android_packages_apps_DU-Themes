@@ -102,6 +102,8 @@
     <string name="accent_colors_red">Red</string>
     <string name="accent_colors_teal">Teal</string>
     <string name="accent_colors_yellow">Yellow</string>
+    <string name="accent_colors_oneplusred">OnePlus Red</string>
+    <string name="accent_colors_pixelblue">Pixel Blue</string>
 
     <!-- Themes -->
     <string name="theme_type_title">System theme</string>

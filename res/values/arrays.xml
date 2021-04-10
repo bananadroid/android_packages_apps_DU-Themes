@@ -141,6 +141,8 @@
         <item>@string/accent_colors_red</item>
         <item>@string/accent_colors_teal</item>
         <item>@string/accent_colors_yellow</item>
+        <item>@string/accent_colors_oneplusred</item>
+        <item>@string/accent_colors_pixelblue</item>
     </string-array>
 
     <!-- Accent Picker Buttons -->
@@ -168,6 +170,8 @@
         <item>redAccent</item>
         <item>tealAccent</item>
         <item>yellowAccent</item>
+        <item>oneplusRedAccent</item>
+        <item>pixelBlueAccent</item>
     </string-array>
 
     <!-- Navbar name -->
