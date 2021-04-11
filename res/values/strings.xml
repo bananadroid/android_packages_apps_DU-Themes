@@ -36,11 +36,11 @@
     <string name="theme_navbar_picker_oneplus">OnePlus</string>
     <string name="theme_navbar_picker_oneui">One UI</string>
     <string name="theme_navbar_picker_tecno">Tecno Camon</string>
-    <string name="theme_navbar_picker_asus">ASUS</string>
-    <string name="theme_navbar_picker_android">Android</string>
+    <string name="theme_navbar_picker_asus">Asus</string>
+    <string name="theme_navbar_picker_android">Android Robo</string>
     <string name="theme_navbar_picker_moto">Moto</string>
     <string name="theme_navbar_picker_nexus">Nexus</string>
-    <string name="theme_navbar_picker_old">Old</string>
+    <string name="theme_navbar_picker_old">Old Style</string>
     <string name="theme_navbar_picker_sammy">Samsung</string>
 
     <!-- Dark theme -->
