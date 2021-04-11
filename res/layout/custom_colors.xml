@@ -20,7 +20,7 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/amberAccent"
+        android:id="@+id/oneplusRedAccent"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_columnWeight="1"
@@ -29,7 +29,19 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:background="@drawable/accent_picker_circle"
-        android:backgroundTint="#FFFFC107" />
+        android:backgroundTint="#FFEB0028" />
+
+    <Button
+        android:id="@+id/pixelBlueAccent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/accent_picker_circle"
+        android:backgroundTint="#FF1A73E8" />
 
     <Button
         android:id="@+id/blueAccent"
@@ -224,7 +236,7 @@
         android:backgroundTint="#FFFFEB3B" />
 
     <Button
-        android:id="@+id/oneplusRedAccent"
+        android:id="@+id/amberAccent"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_columnWeight="1"
@@ -233,19 +245,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:background="@drawable/accent_picker_circle"
-        android:backgroundTint="#FFEB0028" />
-
-    <Button
-        android:id="@+id/pixelBlueAccent"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_columnWeight="1"
-        android:gravity="center"
-        android:layout_gravity="fill_horizontal"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/accent_picker_circle"
-        android:backgroundTint="#FF1A73E8" />
+        android:backgroundTint="#FFFFC107" />
 
 </LinearLayout>
 
