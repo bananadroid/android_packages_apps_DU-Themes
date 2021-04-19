@@ -81,6 +81,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
     public static final String PREF_ADAPTIVE_ICON_SHAPE = "adapative_icon_shape";
     public static final String PREF_FONT_PICKER = "font_picker";
     public static final String PREF_STATUSBAR_ICONS = "statusbar_icons";
+    public static final String PREF_SWITCH_STYLE = "switch_style";
     public static final String PREF_THEME_SWITCH = "theme_switch";
 
     private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
@@ -100,6 +101,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
     private ListPreference mAdaptiveIconShape;
     private ListPreference mFontPicker;
     private ListPreference mStatusbarIcons;
+    private ListPreference mSwitchStyle;
     private ListPreference mThemeSwitch;
     private Preference mAccentPicker;
     private Preference mBackupThemes;
@@ -325,6 +327,16 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
         }
         mStatusbarIcons.setSummary(mStatusbarIcons.getEntry());
 
+        // Switch style
+        mSwitchStyle = (ListPreference) findPreference(PREF_SWITCH_STYLE);
+        int switchStyleValue = getOverlayPosition(ThemesUtils.SWITCH_STYLE);
+        if (switchStyleValue != -1) {
+            mSwitchStyle.setValue(String.valueOf(switchStyleValue + 2));
+        } else {
+            mSwitchStyle.setValue("1");
+        }
+        mSwitchStyle.setSummary(mSwitchStyle.getEntry());
+
         setWallpaperPreview();
         updateAccentSummary();
         updateNavbarSummary();
@@ -519,6 +531,20 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
                             true, mOverlayManager);
                 }
                 mStatusbarIcons.setSummary(mStatusbarIcons.getEntry());
+            }
+
+            if (key.equals(PREF_SWITCH_STYLE)) {
+                String switchStyle = sharedPreferences.getString(PREF_SWITCH_STYLE, "1");
+                String overlayName = getOverlayName(ThemesUtils.SWITCH_STYLE);
+                int switchStyleValue = Integer.parseInt(switchStyle);
+                if (overlayName != null) {
+                    handleOverlays(overlayName, false, mOverlayManager);
+                }
+                if (switchStyleValue > 1) {
+                    handleOverlays(ThemesUtils.SWITCH_STYLE[switchStyleValue - 2],
+                        true, mOverlayManager);
+                }
+                mSwitchStyle.setSummary(mSwitchStyle.getEntry());
             }
 
             if (key.equals(PREF_THEME_SWITCH)) {
@@ -847,6 +873,8 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
             .remove(PREF_ADAPTIVE_ICON_SHAPE)
             // Statusbar icons
             .remove(PREF_STATUSBAR_ICONS)
+            // Switch style
+            .remove(PREF_SWITCH_STYLE)
             // Themes
             .remove(PREF_THEME_SWITCH)
             .apply();
