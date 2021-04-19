@@ -88,7 +88,7 @@ public class AccentPicker extends DialogFragment {
         String colorVal = mSharedPreferences.getString("theme_accent_color", "hex");
         final String prefix = "hex";
         if (colorVal.startsWith(prefix) ) {
-            Settings.Secure.putStringForUser(mContext.getContentResolver(), Settings.Secure.ACCENT_DARK,
+            Settings.Secure.putStringForUser(mContext.getContentResolver(), Settings.Secure.ACCENT_COLOR,
                     null, UserHandle.USER_CURRENT);
             mSharedPreferencesEditor.remove("theme_accent_color").apply();
         }

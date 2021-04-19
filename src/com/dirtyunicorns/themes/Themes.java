@@ -337,7 +337,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
     private void setAccentPref() {
         rgbAccentPicker = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER);
         String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
-                Settings.Secure.ACCENT_DARK, UserHandle.USER_CURRENT);
+                Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
         int color = (colorVal == null)
                 ? Color.WHITE
                 : Color.parseColor("#" + colorVal);
@@ -409,14 +409,14 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
 
     private void handleRGBAccentUpdate(String value) {
         Settings.Secure.putStringForUser(mContext.getContentResolver(),
-                    Settings.Secure.ACCENT_DARK,
+                    Settings.Secure.ACCENT_COLOR,
                     value, UserHandle.USER_CURRENT);
         reloadAssets();
     }
 
     private void resetRGBAccentColor() {
         Settings.Secure.putStringForUser(mContext.getContentResolver(),
-                    Settings.Secure.ACCENT_DARK,
+                    Settings.Secure.ACCENT_COLOR,
                     null, UserHandle.USER_CURRENT);
         reloadAssets();
     }
@@ -468,7 +468,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
                     handleRGBAccentUpdate(accentColor.substring(prefix.length()));
                 } else if (accentColor != "default") {
                     Settings.Secure.putStringForUser(mContext.getContentResolver(),
-                                Settings.Secure.ACCENT_DARK,
+                                Settings.Secure.ACCENT_COLOR,
                                 null, UserHandle.USER_CURRENT);
                     handleOverlays(accentColor, true, mOverlayManager);
                 } else {
@@ -767,7 +767,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
     private void updateAccentSummary() {
         if (mAccentPicker != null) {
             String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
-                Settings.Secure.ACCENT_DARK, UserHandle.USER_CURRENT);
+                Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
             if (colorVal == null) {
                 int value = getOverlayPosition(ThemesUtils.ACCENTS);
                 if (value != -1) {
