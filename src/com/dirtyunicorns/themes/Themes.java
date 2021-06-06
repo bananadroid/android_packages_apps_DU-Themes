@@ -272,19 +272,7 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
 
         // Themes
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
-        if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.ocean")) {
-            mThemeSwitch.setValue("10");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.nature")) {
-            mThemeSwitch.setValue("9");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.flame")) {
-            mThemeSwitch.setValue("8");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.ethereal")) {
-            mThemeSwitch.setValue("7");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.clear")) {
-            mThemeSwitch.setValue("6");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.color.primary.charcoalblack")) {
-            mThemeSwitch.setValue("5");
-        } else if (bananaUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
+        if (bananaUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
             mThemeSwitch.setValue("4");
         } else if (bananaUtils.isThemeEnabled("com.android.theme.pitchblack.system")) {
             mThemeSwitch.setValue("3");
@@ -555,180 +543,24 @@ public class Themes extends PreferenceFragment implements ThemesListener, OnPref
                                 ThemesUtils.PITCH_BLACK, mOverlayManager);
                         handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
                                 ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_NO,
-                                ThemesUtils.OCEAN, mOverlayManager);
                         break;
                     case "2":
                         handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.PITCH_BLACK, mOverlayManager);
                         handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
                         break;
                     case "3":
                         handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.PITCH_BLACK, mOverlayManager);
                         handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
                         break;
                     case "4":
                         handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.PITCH_BLACK, mOverlayManager);
                         handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
                                 ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "5":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "6":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "7":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "8":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "9":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
-                        break;
-                    case "10":
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.PITCH_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.SOLARIZED_DARK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CHARCOAL_BLACK, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.CLEAR, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.ETHEREAL, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.FLAME, mOverlayManager);
-                        handleBackgrounds(false, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.NATURE, mOverlayManager);
-                        handleBackgrounds(true, mContext, UiModeManager.MODE_NIGHT_YES,
-                                ThemesUtils.OCEAN, mOverlayManager);
                         break;
                 }
                 mThemeSwitch.setSummary(mThemeSwitch.getEntry());
