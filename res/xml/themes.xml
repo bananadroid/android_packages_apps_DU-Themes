@@ -35,14 +35,6 @@
         android:title="@string/theme_navbar_picker_title"
         android:summary="@string/theme_navbar_picker_summary" />
 
-    <ListPreference
-        android:key="font_picker"
-        android:title="@string/font_type_title"
-        android:summary="@string/font_type_summary"
-        android:dialogTitle="@string/font_type_summary"
-        android:entries="@array/font_type_titles"
-        android:entryValues="@array/font_type_values" />
-
     <com.bananadroid.support.preferences.SystemSettingListPreference
         android:key="settings_dashboard_icons"
         android:title="@string/settings_dashboard_icons_title"
