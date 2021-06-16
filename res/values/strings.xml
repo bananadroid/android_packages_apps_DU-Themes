@@ -173,6 +173,7 @@
     <string name="switch_contained">Contained</string>
     <string name="switch_retro">Retro</string>
     <string name="switch_stockish">Stockish</string>
+    <string name="switch_fluid">Fluid</string>
     <string name="switch_style_dialog_title">Select switch style set</string>
 
     <!-- Custom settings dashboard icons -->
