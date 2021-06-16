@@ -1,0 +1,37 @@
+android_app {
+    name: "DU-Themes",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    srcs: ["src/**/*.java",],
+    resource_dirs: ["res",],
+
+    manifest: "AndroidManifest.xml",
+
+    platform_apis: true,
+    privileged: true,
+    certificate: "platform",
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+        "androidx.cardview_cardview",
+        "androidx.preference_preference",
+        "androidx.recyclerview_recyclerview",
+        "androidx-constraintlayout_constraintlayout-solver",
+        "VendorSupport-preference",
+    ],
+
+    aaptflags: [
+        "--auto-add-overlay",
+        "--extra-packages androidx.appcompat_appcompat",
+        "--extra-packages androidx.cardview_cardview",
+        "--extra-packages androidx.preference_preference",
+        "--extra-packages androidx.recyclerview_recyclerview",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
